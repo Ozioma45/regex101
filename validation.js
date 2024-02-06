@@ -3,6 +3,9 @@ const inputs = document.querySelectorAll("input");
 
 const patterns = {
   telephone: /^\d{11}$/,
+  username: /^[a-z][a-z\d]{4,11}$/,
+  password: /^[\w@-]{8,20}$/,
+  slug: /^[a-z\d-]{8,20}$/,
 };
 
 //validation function
